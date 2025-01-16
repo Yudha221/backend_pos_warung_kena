@@ -27,5 +27,13 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('12345678'),
                 'phone' => '12345678',
         ]);
+
+        //seeder profile_warungs manual
+        \App\Models\ProfileWarung::factory()->create([
+            'name' => 'Warung Keena',
+            'address' => 'JL. H.Saamin Cilandak No.20',
+            'phone' => '1234567890',
+            'email' => 'Dika@warung.com',
+        ]);
     }
 }

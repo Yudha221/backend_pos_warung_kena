@@ -35,5 +35,9 @@ class DatabaseSeeder extends Seeder
             'phone' => '1234567890',
             'email' => 'Dika@warung.com',
         ]);
+
+        //call category seeder
+        $this->call(CategorySeeder::class);
+
     }
 }

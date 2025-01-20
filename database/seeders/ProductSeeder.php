@@ -5,14 +5,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CategorySeeder extends Seeder
+class ProductSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        // Menambahkan 2 Category
-        \App\Models\Category::factory(6)->create();
+        //Menambah 6 Product
+        \App\Models\Product::factory(4)->create();
     }
 }

@@ -36,8 +36,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'Dika@warung.com',
         ]);
 
-        //call category seeder
-        $this->call(CategorySeeder::class);
+        //call  seeder
+        $this->call([
+            CategorySeeder::class,
+            ProductSeeder::class,
+        ]);
 
     }
 }

@@ -23,6 +23,12 @@
                             href="{{ route('categories.index') }}"><i class="fa-solid fa-list"></i>Category</a>
                     </li>
                 </ul>
+                <ul class="dropdown-menu">
+                    <li class=''>
+                        <a class="nav-link"
+                        href="{{ route('products.index') }}"><i class="fa-solid fa-burger"></i>Product</a>
+                    </li>
+                </ul>
             </li>
     </aside>
 </div>
